@@ -1,0 +1,17 @@
+{
+  "name": "intro-section-with-dropdown-menu",
+  "version": "1.0.0",
+  "description": "\"Frontend Mentor challenge to create an intro section with dropdown menu\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"Challenge",
+    "Intro",
+    "Dropdown",
+    "Menu\""
+  ],
+  "author": "Raymac Antony Gumbo",
+  "license": "ISC"
+}
