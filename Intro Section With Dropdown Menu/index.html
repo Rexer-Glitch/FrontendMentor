@@ -1,23 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.raymacantony.tech">Raymac Antony Gumbo</a>.
-  </div>
-</body>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+        <div class="nav-menu"><img src="./images/icon-menu.svg" alt="menu icon"/></div>
+        <div class="nav-items-wrapper">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <span>Features
+              <img
+                class="nav-icon"
+                src="./images/icon-arrow-down.svg"
+                alt="down icon indicating additional navigation options"
+              />
+              </span>
+              <div class="nav-item-opts-wrapper">
+                <ul class="nav-item-opts">
+                  <li class="nav-item-opt">
+                    <a href="#"><img src="./images/icon-todo.svg" alt="todo icon" /> Todo
+                    List
+                    </a>
+                  </li>
+                  <li class="nav-item-opt">
+                    <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon" />
+                    Calendar</a>
+                  </li>
+                  <li class="nav-item-opt">
+                    <a href="#"><img
+                      src="./images/icon-reminders.svg"
+                      alt="reminder icon"
+                    />
+                    Reminders
+                    </a>
+                  </li>
+                  <li class="nav-item-opt">
+                    <a href="#"><img
+                      src="./images/icon-planning.svg"
+                      alt="planning icon"
+                    />Planning
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <span>Company
+              <img
+                class="nav-icon"
+                src="./images/icon-arrow-down.svg"
+                alt="down icon indicating additional navigation options"
+              />
+              </span>
+              <div class="nav-item-opts-wrapper">
+                <ul class="nav-item-opts">
+                  <li class="nav-item-opt"><a href="#">History</a></li>
+                  <li class="nav-item-opt"><a href="#">Our Team</a></li>
+                  <li class="nav-item-opt"><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item disabled"><span>Careers</span></li>
+            <li class="nav-item"><span>About</span></li>
+          </ul>
+          <ul class="nav-btns">
+            <li class="nav-btn">Login</li>
+            <li class="nav-btn nav-btn-border">Register</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="cta-wrapper">
+        <div class="cta-content">
+          <h1 class="cta-title">Make remote work</h1>
+          <p class="cta-text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="cta-btn btn btn-dark btn-border">Learn more</button>
+          <div class="cta-clients">
+            <img src="./images/client-databiz.svg" alt="databiz client" />
+            <img src="./images/client-audiophile.svg" alt="audiophile client" />
+            <img src="./images/client-meet.svg" alt="meet client" />
+            <img src="./images/client-maker.svg" alt="maker client" />
+          </div>
+          
+              <div class="attribution">
+                Challenge by
+                <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                  >Frontend Mentor</a
+                >. Coded by
+                <a href="https://www.raymacantony.tech">Raymac Antony Gumbo</a>.
+              </div>
+        </div>
+        <div class="cta-img"><img src="./images/image-hero-desktop.png" alt="hero"/></div>
+      </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
