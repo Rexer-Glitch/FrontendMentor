@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-One of the areas I struggled with was how to place the pseudo element of the element behind the element itself, a solution I found that fascinated was
+One of the areas I struggled with was how to place the pseudo element of the element behind the element itself, a solution I found that fascinated me was
 
 ```css
 .nav-items-wrapper{
@@ -63,7 +63,7 @@ using **transform: translateZ(-1px)** to offset the ::before pseudo element behi
 
 ### Continued development
 
-There is a bug I just discovered. Clicking on the navigation main links does not close the open sublinks of another main link. I was lazy to think of a better way to close the sublinks when a user clicks out of the sublink container. Any suggestions? I will fix it soon. 
+Now my main focus is in animation using gsap.  
 
 ## Author
 

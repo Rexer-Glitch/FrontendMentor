@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
+@keyframes nav-appear {
+    from{
+        transform: translateX(65vw);
+    }to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes nav-disappear {
+    from {
+        transform: translate(0);
+    }to{
+        transform: translateX(65vw);
+    }
+}
+
+@keyframes sublinks-appear {
+    from {
+        transform: scaleY(0);
+    }to{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes sublinks-disappear {
+    from {
+        transform: scaleY(1);
+    }to {
+        transform: scaleY(0);
+    }
+}
+
+
+
+
 *,*::before, *::after{
     padding: 0;
     margin: 0;
@@ -54,6 +89,15 @@ nav{
 
 .show-nav-items{
     display: block;
+    animation: nav-appear 0.2s linear;
+}
+
+.hide-nav-items-animation{
+    animation: nav-disappear 0.2s linear;
+}
+
+.hide-nav-items-animation::before {
+    display: none;
 }
 
 .nav-items-wrapper span {
@@ -70,8 +114,8 @@ nav{
     content: "";
     position: absolute;
     top: 0;
-    left: -35vw;
-    width: 100vw;
+    left: -100vw;
+    width: 200vw;
     height: 100vh;
 
     transform: translateZ(-1px);
@@ -105,9 +149,14 @@ nav{
 }
 
 .show-nav-item-opts {
+    transform-origin: 0 0;
     display: block;
+    animation: sublinks-appear 0.2s linear;
 }
 
+.hide-nav-item-opts-animation{
+    animation: sublinks-disappear 0.2s linear;
+}
 
 .nav-item-opts {
     padding: 10px 30px;
@@ -124,6 +173,15 @@ nav{
 
 .nav-item-opt a:hover {
     color: var(--primary-color);
+}
+
+.nav-item span {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item span img {
+    margin-left: 10px;
 }
 
 .nav-item-opts img {
@@ -261,7 +319,7 @@ nav{
 
 /* DESKTOP VIEW */
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 870px) {
     .nav-menu{
         display: none;
     }
