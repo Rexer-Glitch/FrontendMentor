@@ -85,6 +85,8 @@ nav{
     font-size: 1.2rem;
     line-height: 2.2;
 
+    transition: all ease-in-out 200ms;
+
 }
 
 .show-nav-items{
@@ -124,7 +126,6 @@ nav{
 
 }
 
-
 .nav-items, .nav-btns{
     padding: 0px 20px;
 }
@@ -152,6 +153,7 @@ nav{
     transform-origin: 0 0;
     display: block;
     animation: sublinks-appear 0.2s linear;
+
 }
 
 .hide-nav-item-opts-animation{
@@ -187,8 +189,6 @@ nav{
 .nav-item-opts img {
     margin-top: -4px;
     margin-right: 15px;
-    width: 12%;
-    height: 12%;
 }
 
 
