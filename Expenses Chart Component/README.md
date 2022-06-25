@@ -10,10 +10,8 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -30,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop screenshot]()
+![desktop screenshot](./images/screenshot.png)
 
 ### Links
 
@@ -47,18 +45,8 @@ Users should be able to:
 - Mobile-first workflow
 - Javascript
 
-### What I learned
-
-
-### Continued development
-
-
 ## Author
 
 - Website - [Raymac Antony Gumbo](https://www.raymacantony.tech)
 - Frontend Mentor - [@Rexer-Glitch](https://www.frontendmentor.io/profile/Rexer-Glitch)
 - Twitter - [@Raymacantonyg](https://www.twitter.com/Raymacantonyg)
-
-
-## Acknowledgments
-
