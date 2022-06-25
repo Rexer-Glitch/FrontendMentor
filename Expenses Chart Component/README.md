@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site url]()
+- Solution URL: [Solution url](https://github.com/Rexer-Glitch/FrontendMentor/tree/main/Expenses%20Chart%20Component)
+- Live Site URL: [Live site url](https://expenses-chart-delta.vercel.app/)
 
 ## My process
 
