@@ -5,29 +5,6 @@ const TOTAL_PERCENT_CHANGE = 2.4;
 const TOTAL = 478.33;
 const CHART_HEIGHT = 200;
 
-
-const getHighestBar = ()=> {
-    if(!chartData) return;
-
-    let barIndex = 0;
-    let bars = [];
-    let currentAmount = chartData[0].amount;
-    chartData.forEach(bar => {
-        if(currentAmount < bar.amount){
-            barIndex++;
-            currentAmount = bar.amount;
-        }
-    });
-    
-    chartData.forEach((bar, i)=> {
-        if(bar.amount === currentAmount){
-            bars.push(i);
-        }
-    })
-    console.log(bars);
-    return bars;
-}
-
 const getHighestAmount = ()=> {
     if(!chartData) return;
 
@@ -40,10 +17,10 @@ const getHighestAmount = ()=> {
     return highestAmount;
 }
 
-const generateBarElement = (amount, day, isHighestBar, height)=> {
+const generateBarElement = (amount, day, isToday, height)=> {
     return `
     <div class="chart-data">
-        <div class="bar ${isHighestBar ? "h-bar":""}" style="height: ${height}px">
+        <div class="bar ${isToday ? "h-bar":""}" style="height: ${height}px">
             <div class="bar-price">$${amount}</div>
         </div>
         <label class="bar-label">${day}</label>
@@ -60,11 +37,10 @@ const renderChart = ()=> {
     const chartWrapper = document.querySelector(".chart");
     chartWrapper.innerHTML = "";
     
-    const highestBars = getHighestBar();
-    chartData.forEach(({amount, day}, barIndex) => {
-        const isHighestBar = highestBars.includes(barIndex);
+    chartData.forEach(({amount, day}, index) => {
+        const isToday = new Date().toDateString().toLowerCase().includes(day.toLowerCase());
         const height = calculateBarHeight(amount);
-        chartWrapper.innerHTML += generateBarElement(amount, day, isHighestBar, height);
+        chartWrapper.innerHTML += generateBarElement(amount, day, isToday, height);
     });
 }
 
